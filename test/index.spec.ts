@@ -1,11 +1,11 @@
-import { myPackage } from '../src';
+import { checkLocales } from '../src';
 
 describe('index', () => {
-  describe('myPackage', () => {
+  describe('checkLocales', () => {
     it('should return a string containing the message', () => {
       const message = 'Hello';
 
-      const result = myPackage(message);
+      const result = checkLocales();
 
       expect(result).toMatch(message);
     });
